@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passport Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+  }
+  header {
+  max-width: 500px; /* Adjust container width */
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding:  20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a, .nav-right a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+  #registration-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items:center;
+    
+  }
+  input[type="text"], input[type="password"],input[type="date"],input[type="email"], select {
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+    <div id="registration-container">
+      <h2>Passport Registration Form</h2>
+      <form id="registration-form" action="applicant_apply.php" method="post">
+        <input type="text" name="fullname" placeholder="Full Name" required><br><br>
+        <input type="text" name="fathersname" placeholder="Father's Name" required><br><br>
+        <input type="date" name="dob" required><br><br>
+        <input type="text" name="nationality" placeholder="Nationality" required><br><br>
+        <input type="text" name="address" placeholder="Address" required><br><br>
+        <input type="text" name="phoneno" placeholder="Phone Number" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <input type="text" name="aadharno" placeholder="Aadhar Number" required><br><br>
+        <input type="text" name="panno" placeholder="PAN Number" ><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </body>
+    </html>

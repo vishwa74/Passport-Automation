@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passport Automation System Registration</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  max-width: 500px; /* Adjust container width */
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding:  20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a, .nav-right a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+#register-container {
+  max-width: 500px; /* Adjust container width */
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+button {
+  width: calc(100% - 22px); /* Adjust width */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <div id="register-container">
+    <h2>Register for Passport Automation System</h2>
+    <form id="register-form" action="register.php" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <select name="user_type" required>
+        <option value="" disabled selected>Select User Type</option>
+        <option value="applicant">Applicant</option>
+        <option value="admin">Admin</option>
+        <option value="regional_office">Regional Office</option>
+        <option value="police">Police</option>
+      </select>
+      <input type="text" name="pin" placeholder="PIN (if applicable)">
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
